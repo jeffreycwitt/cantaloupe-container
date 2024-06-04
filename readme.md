@@ -6,9 +6,7 @@ This is bare minimum repo for running a cantaloupe servers inside codespaces
 
 # Start
 
-Once the code space is started run
-
-`cd /cantaloupe-5.0.6`
+Once the code space is started run:
 
 `cp cantaloupe.properties.sample cantaloupe.properties`
 
