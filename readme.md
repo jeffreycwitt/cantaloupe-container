@@ -10,10 +10,20 @@ Once the code space is started run:
 
 `cp cantaloupe.properties.sample cantaloupe.properties`
 
+Change the location of images to `./images/` by finding the line in the `cantaloupe.properties` file that says
+
+`FilesystemSource.BasicLookupStrategy.path_prefix = /home/myself/images/`
+
+and change to 
+
+`FilesystemSource.BasicLookupStrategy.path_prefix = ./images/`
+
+Then run 
+
 `java -Dcantaloupe.config=cantaloupe.properties -Xmx2g -jar cantaloupe-5.0.6.jar`
 
 Once running, change the port visibility to "public", and then use code space to find the public accessible url. 
 
 Using this URL you should be able to access the following sample image
 
-`<github-public-url>/iiif/3/image.tif/0,0,200,200/max/0/default.jpg`
+`<github-public-url>/iiif/3/vangough.jpg/full/max/0/default.jpg`
