@@ -2,7 +2,7 @@
 
 This is bare minimum repo for running a cantaloupe servers inside codespaces
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jeffreycwitt/cantaloupe container)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jeffreycwitt/cantaloupe-container)
 
 # Start
 
