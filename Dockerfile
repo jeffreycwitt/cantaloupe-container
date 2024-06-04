@@ -2,7 +2,7 @@
 FROM openjdk:21-jdk-slim
 
 # Install wget and unzip
-RUN apt-get update && apt-get install -y wget unzip
+RUN apt-get update && apt-get install -y wget unzip libfreetype6 fontconfig fonts-dejavu
 
 # Set the working directory to /app
 WORKDIR /
@@ -15,6 +15,10 @@ RUN unzip cantaloupe-5.0.6.zip
 
 # Remove the zip file
 RUN rm cantaloupe-5.0.6.zip
+
+RUN mkdir cantaloupe-5.0.6/images
+
+RUN wget https://ids.lib.harvard.edu/ids/iiif/43182083/full/full/0/default.jpg -O cantaloupe-5.0.6/images/vangough.jpg
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
