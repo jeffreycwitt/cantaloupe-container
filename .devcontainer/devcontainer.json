@@ -1,0 +1,6 @@
+{
+  "name": "Java Dev Container",
+  "dockerFile": "../Dockerfile",
+  "forwardPorts": [8080],
+  "workspaceFolder": "/cantaloupe-5.0.6",
+}
